@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taksi Tek Buton – Gizlilik Politikası / Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px;
+         margin: 0 auto; padding: 24px 16px 48px; line-height: 1.6; color: #1f1f1f; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8em; }
+  .muted { color: #666; font-size: .9rem; }
+  hr { margin: 2.5em 0; border: none; border-top: 1px solid #ddd; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  td, th { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<h1>Taksi Tek Buton – Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 17 Kasım 2026 · Google Play sürümü v143 ve sonrası<br>
+Geliştirici: Harun Bilgin · İletişim: <a href="mailto:bilginprojeler@gmail.com">bilginprojeler@gmail.com</a></p>
+
+<p>Taksi Tek Buton ("uygulama"), taksi sürücülerinin telefonlarındaki uyumlu sürücü uygulamalarında
+(BiTaksi, Uber Driver ve Yandex Pro) müsaitlik durumunu tek dokunuşla birlikte değiştirmesine yardım eden bir
+araçtır. Bu sayfa uygulamanın hangi verilere eriştiğini, bunlarla ne yaptığını ve kimlerle paylaşıldığını açıklar.
+Uygulama BiTaksi, Uber veya Yandex ile bağlantılı değildir ve onlar tarafından onaylanmamıştır.</p>
+
+<h2>1. Özet</h2>
+<ul>
+  <li>Hesap açma yok. Ad, telefon numarası, plaka veya e-posta istenmez.</li>
+  <li>Erişilebilirlik servisiyle okunan ekran içerikleri ve bildirimler <b>yalnızca telefonda</b> işlenir;
+  geliştiriciye veya başka birine gönderilmez, satılmaz.</li>
+  <li>Isı haritası ekranını açarsanız, izin verirseniz konumunuz <b>yalnızca uygulama açıkken (ön planda)</b>
+  haritada yerinizi göstermek için kullanılır. Rota isterseniz başlangıç ve varış noktası rota hesabı için
+  OpenStreetMap rota sunucusuna gider (bkz. Bölüm 5). Arka planda konum alınmaz.</li>
+  <li>Kapalı test sürümünde (v143) <b>reklam gösterilmez</b>. İleride ana menünün altında tek bir küçük reklam
+  bandı (banner) açılabilir; bunun için Google AdMob kullanılır (bkz. Bölüm 6). Tam ekran reklam gösterilmez.</li>
+  <li>Geliştiricinin kendi sunucusu yoktur; geliştirici sizinle ilgili hiçbir veriyi toplamaz ve saklamaz.</li>
+</ul>
+
+<h2>2. Erişilebilirlik servisi (AccessibilityService API)</h2>
+<p>Uygulama Android'in Erişilebilirlik servisini kullanır. Bu, engelli kullanıcılara yönelik bir erişilebilirlik
+aracı olarak değil, sürücünün kendi istediği tek bir işi (müsaitlik değiştirme) yapmak için kullanılır. Servis
+yalnızca uygulama içindeki açıklamayı okuyup "Kabul ediyorum"a bastıktan ve Android ayarlarından izni kendiniz
+açtıktan sonra çalışır.</p>
+<ul>
+  <li><b>Okunan veriler:</b> BiTaksi, Uber Driver ve Yandex Pro ekranlarındaki yazılar ve düğmeler (müsaitlik
+  düğmesini bulmak ve yolculukta olup olmadığınızı anlamak için). Bu ekranlarda yolcu adı, adres ve kazanç gibi
+  bilgiler görünebilir; bunlar <b>saklanmaz ve gönderilmez</b>. İşlem bitince sizi önceki ekrana geri götürmek
+  için o an önde olan uygulamanın paket adı okunur.</li>
+  <li><b>Yapılan işlemler:</b> Siz AKTİF veya PASİF'e bastığınızda bu üç uygulamayı sırayla açar ve
+  müsaitlik düğmelerine (Müsait / Meşgul, Çevrimiçi / Çevrimdışı) dokunur veya kaydırır. İsteğe bağlı ve
+  varsayılan olarak KAPALI bir kural vardır: "Yolcu alınca diğerlerini PASİF yap / yolculuk bitince AKTİF yap".
+  Bu, sizin açtığınız sabit bir kuraldır.</li>
+  <li><b>Yapılmayanlar:</b> Yolculuk talebi veya çağrı kabul edilmez, reddedilmez, iş seçilmez. Şifre, ödeme
+  veya kart bilgisi okunmaz. Başka uygulamalarda işlem yapılmaz. Telefon ayarları değiştirilmez.</li>
+</ul>
+
+<h2>3. Bildirim erişimi (isteğe bağlı)</h2>
+<p>Ayrı bir açıklamayla onay verirseniz, uygulama yalnızca BiTaksi, Uber Driver ve Yandex Pro bildirimlerinin
+yazısını okur (ör. "Durumunuz: Müsait", "Çevrimiçisiniz", "Yeni çağrı"). Amaç, zaten doğru durumda olan ya da
+yolculuktaki uygulamayı boşuna açmamaktır. Siz AKTİF'e bastığınızda BiTaksi bildirimindeki kendi "Müsaite geç"
+düğmesi kullanılabilir. Başka uygulamaların bildirimlerine bakılmaz. Bildirimler telefonda işlenir, saklanmaz ve
+gönderilmez. Bu izin olmadan da uygulama çalışır.</p>
+
+<h2>4. Telefonda tutulan bilgiler</h2>
+<ul>
+  <li>Ayarlarınız (butonun yeri ve boyutu, hangi uygulamaların kullanılacağı, otomatik kural açık/kapalı).</li>
+  <li>Son AKTİF / PASİF işlemlerinin kısa bir kaydı (hangi uygulamada başarılı oldu). Yolcu bilgisi içermez.
+  Bu kayıt yalnızca siz "kaydı gönder" seçeneğini kullanırsanız, sizin seçtiğiniz kişiye / uygulamaya
+  gönderilir.</li>
+</ul>
+<p>Bu bilgiler telefonun yedeğine alınmaz ve uygulama kaldırılınca silinir.</p>
+
+<h2>5. Isı haritası ve konum (isteğe bağlı)</h2>
+<p>Yüzen kutudaki "Isı haritası" düğmesi bir harita ekranı açar. Bu sürümde haritada taksi yoğunluğu verisi yoktur
+("Yoğunluk verisi yakında"); harita, konumunuz ve rota özelliği çalışır.</p>
+<ul>
+  <li><b>Konum izni (kesin / yaklaşık):</b> yalnızca harita ekranını açtığınızda Android'in izin penceresiyle istenir.
+  Konum yalnızca harita ekranı açıkken alınır, ekrandan çıkınca durur; <b>arka planda konum alınmaz</b> ve arka plan
+  konum izni istenmez. İzin vermezseniz harita yine açılır, yalnızca yeriniz gösterilmez.</li>
+  <li><b>Haritada yeriniz:</b> konum telefonda işlenir; geliştiriciye gönderilmez ve saklanmaz.</li>
+  <li><b>Harita görüntüleri:</b> harita karoları ve yazı tipleri OpenFreeMap'ten (tiles.openfreemap.org) indirilir.
+  Bu isteklerde koordinatınız gönderilmez, ancak indirilen karolar haritanın gösterdiği bölgeyi (dolayısıyla
+  yaklaşık konumu) ve IP adresinizi bu sunucuya belli eder.</li>
+  <li><b>Rota (yalnızca "Rota" anahtarını açıp haritaya dokunursanız):</b> başlangıç noktası olarak o anki
+  konumunuz ve dokunduğunuz varış noktası (enlem/boylam) rota hesabı için FOSSGIS e.V.'nin işlettiği OpenStreetMap
+  Valhalla sunucusuna (valhalla1.openstreetmap.de, Almanya) şifreli bağlantıyla gönderilir. Geliştirici bu
+  bilgileri almaz ve saklamaz.</li>
+</ul>
+
+<h2>6. Reklamlar (Google AdMob)</h2>
+<p><b>Kapalı test sürümünde (v143) reklam kapalıdır:</b> reklam SDK'sı pakette bulunur ancak başlatılmaz ve reklam
+gösterilmez. Reklamlar açıldığında uygulama, yalnızca ana menünün en altında tek bir küçük banner reklam gösterir; yüzen düğmede, izin ve onay
+ekranlarında reklam yoktur, tam ekran (geçiş, açılış, ödüllü) reklam kullanılmaz. Reklamlar Google LLC'nin
+Google Mobile Ads SDK'sı (AdMob) ile gösterilir. Bu SDK, reklam göstermek, reklam ölçümü / analiz ve sahtekârlığı
+önlemek için şunları <b>otomatik olarak toplar ve Google ile paylaşır</b>:</p>
+<ul>
+  <li>IP adresi (genel/yaklaşık konumu tahmin etmek için kullanılabilir),</li>
+  <li>Reklam kimliği (Android advertising ID), uygulama grubu kimliği (app set ID) ve cihaz bilgileri,</li>
+  <li>Reklamla etkileşimler (görüntüleme, dokunma) ve uygulama açılışı gibi etkileşimler,</li>
+  <li>Teşhis bilgileri (performans, uygulama açılış süresi vb.).</li>
+</ul>
+<p>Bu veriler aktarım sırasında şifrelenir (TLS). Google'ın verileri nasıl kullandığı:
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>
+· Google Gizlilik Politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+Kişiselleştirilmiş reklamları kapatmak veya reklam kimliğinizi sıfırlamak / silmek için: Android
+<i>Ayarlar &gt; Google &gt; Reklamlar</i> (veya <i>Ayarlar &gt; Gizlilik &gt; Reklamlar</i>). Google verileri
+Türkiye dışındaki sunucularda işleyebilir.</p>
+
+<h2>7. Üçüncü taraflar</h2>
+<table>
+  <tr><th>Hizmet</th><th>Ne için</th><th>Giden veri</th></tr>
+  <tr><td>Google AdMob (Google LLC)</td><td>Ana menüdeki banner reklam (v143'te kapalı)</td><td>Bölüm 6'da yazanlar</td></tr>
+  <tr><td>OpenFreeMap</td><td>Harita görüntüleri (karolar, yazı tipleri)</td><td>IP adresi, görüntülenen harita bölgesi</td></tr>
+  <tr><td>OpenStreetMap Valhalla (FOSSGIS e.V.)</td><td>Rota hesabı (yalnızca siz rota isteyince)</td><td>Başlangıç (konumunuz) ve varış koordinatları, IP adresi</td></tr>
+  <tr><td>Google Play</td><td>Uygulamanın satışı ve güncellenmesi</td><td>Google Play'in kendi politikasına tabidir</td></tr>
+</table>
+<p>Bunların dışında hiçbir veri satılmaz, kiralanmaz veya üçüncü kişilerle paylaşılmaz.</p>
+
+<h2>8. İzinler</h2>
+<ul>
+  <li><b>Erişilebilirlik servisi</b> – Bölüm 2.</li>
+  <li><b>Bildirim erişimi</b> (isteğe bağlı) – Bölüm 3.</li>
+  <li><b>Konum (kesin / yaklaşık, yalnızca ön planda)</b> – Bölüm 5.</li>
+  <li><b>İnternet / ağ durumu</b> – harita, rota ve (açıldığında) reklam bandı için.</li>
+  <li><b>Reklam kimliği (AD_ID)</b> – Bölüm 6.</li>
+  <li><b>Titreşim</b> – düğmeye basınca kısa titreşim.</li>
+</ul>
+<p>Uygulama arka plan konumu, rehber, SMS, arama kaydı, kamera, mikrofon veya dosyalara erişmez. İzinleri istediğiniz an
+Android Ayarlar'dan kapatabilir, uygulama içindeki "Uygulama ne yapar? → Onayı geri al" ile onayınızı geri
+alabilirsiniz; onay geri alınınca servisler hiçbir şey okumaz ve hiçbir şeye dokunmaz.</p>
+
+<h2>9. Çocuklar</h2>
+<p>Uygulama 18 yaş üstü, sürücü belgesi olan taksi sürücüleri içindir; 18 yaş altına yönelik değildir ve bilerek
+çocuklardan veri toplamaz.</p>
+
+<h2>10. Haklarınız (KVKK) ve veri silme</h2>
+<p>Geliştirici sizinle ilgili kişisel veri saklamadığı için silinecek bir sunucu kaydı yoktur; telefondaki
+tüm veriler uygulama kaldırılınca silinir. 6698 sayılı KVKK kapsamındaki sorularınız ve talepleriniz için
+<a href="mailto:bilginprojeler@gmail.com">bilginprojeler@gmail.com</a> adresine yazabilirsiniz; en geç 30 gün
+içinde yanıt verilir. Reklam verileri için Google'ın araçlarını kullanabilirsiniz (Bölüm 6).</p>
+
+<h2>11. Değişiklikler</h2>
+<p>Bu politika değişirse bu sayfa güncellenir ve "Son güncelleme" tarihi değişir. Uygulamanın veri kullanımı
+değişirse uygulama içinde yeniden onayınız istenir.</p>
+
+<hr>
+
+<h1>Privacy Policy (English summary)</h1>
+<p class="muted">Last updated: 17 November 2026 · Contact: <a href="mailto:bilginprojeler@gmail.com">bilginprojeler@gmail.com</a></p>
+<ul>
+  <li><b>Accessibility Service:</b> after in-app disclosure and explicit consent, the app reads the screens of the
+  BiTaksi, Uber Driver and Yandex Pro driver apps only to find their availability control, and taps/swipes it when
+  the user taps AKTİF (online) or PASİF (offline). An optional, user-enabled, OFF-by-default fixed rule sets the
+  other apps offline when a trip starts and back online when it ends. It never accepts or declines ride requests.
+  Screen content (which may show passenger name, address or earnings) is processed on the device only; it is not
+  stored, transmitted, sold or shared.</li>
+  <li><b>Notification access (optional, separate consent):</b> reads only those three apps' notifications to know
+  their online/offline/trip status; processed on device only.</li>
+  <li><b>Map and location (optional):</b> the heat-map screen shows no density data in this version. If you allow it,
+  your location is used only while the map screen is open (foreground only, never in the background) to show your
+  position on the device; it is not sent to the developer. Map tiles come from OpenFreeMap (reveals the viewed area
+  and your IP, not your coordinates). If you turn on "Rota" and tap a destination, your current location and the
+  destination coordinates are sent over HTTPS to the OpenStreetMap Valhalla routing server run by FOSSGIS e.V.
+  (valhalla1.openstreetmap.de) to calculate the route.</li>
+  <li><b>Ads:</b> disabled in the closed-test version (v143): the SDK is bundled but not initialized. When enabled: one small banner at the bottom of the main menu, served by Google AdMob (Google Mobile Ads SDK).
+  The SDK automatically collects and shares with Google the IP address (may estimate approximate location),
+  advertising ID / app set ID, ad and app interactions and diagnostics, for advertising, analytics and fraud
+  prevention, encrypted in transit. No full-screen ads. See policies.google.com/technologies/partner-sites.</li>
+  <li>No account, no developer server; the developer does not collect or store personal data. Local settings and a
+  short action log stay on the device and are deleted on uninstall. The app is intended for adults (18+).</li>
+  <li>Not affiliated with or endorsed by BiTaksi, Uber or Yandex.</li>
+</ul>
+</body>
+</html>
